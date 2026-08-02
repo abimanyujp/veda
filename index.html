@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abimanyu Jaya Prakash — Mechanical Engineer, Optical Photonics</title>
+<meta name="description" content="Portfolio of Abimanyu Jaya Prakash — M.S. Mechanical Engineering, National Chung Cheng University. Optical biosensors, photonic nanostructures, nanofabrication.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="pip"></span> A. JAYA PRAKASH</div>
+    <nav class="links">
+      <a href="#work">Work</a>
+      <a href="#publication">Publication</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-grid">
+      <p class="eyebrow"><span class="dot">●</span> MECHANICAL ENGINEER · OPTICAL PHOTONICS · NANOFABRICATION</p>
+      <h1>Abimanyu Jaya Prakash</h1>
+      <p class="tagline">I design and fabricate <strong>photonic nanostructures</strong> that turn a nanoscale resonance shift into a working biosensor — from COMSOL model, through the cleanroom, to a validated device.</p>
+      <p class="subtitle">M.S. Mechanical Engineering (Optical Photonics) — National Chung Cheng University, Taiwan · graduating January 2027</p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:abimanyujayaprakash@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/abi5873766" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn ghost" href="#work">See the biosensor ↓</a>
+      </div>
+
+      <div class="chart-panel reveal">
+        <div class="panel-label">
+          <span>DEVICE.RESPONSE // TRANSMITTANCE_VS_WAVELENGTH</span>
+          <span>WGMPC-01</span>
+        </div>
+        <svg id="resonance-chart" viewBox="0 0 900 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Illustrative transmittance spectrum of the waveguide-coupled metallic photonic crystal, showing a dip at 531 nanometers and a second dip at 580 nanometers">
+          <!-- gridlines -->
+          <g class="gridline">
+            <line x1="60" y1="40" x2="60" y2="240"></line>
+            <line x1="60" y1="240" x2="860" y2="240"></line>
+          </g>
+          <!-- guides -->
+          <line class="guide g531" x1="294" y1="40" x2="294" y2="240"></line>
+          <line class="guide g580" x1="518" y1="40" x2="518" y2="240"></line>
+
+          <!-- curve: baseline with two dips at x=294 (531nm) and x=518 (580nm) -->
+          <path class="curve" d="M60,78
+            C130,76 190,78 225,86
+            C258,94 272,150 294,215
+            C306,247 316,205 332,168
+            C356,116 420,96 460,104
+            C482,109 500,128 518,148
+            C538,170 560,142 585,112
+            C650,88 730,80 860,78" />
+
+          <circle class="dot" cx="294" cy="215" r="4" fill="var(--green-531)"></circle>
+          <circle class="dot" cx="518" cy="148" r="4" fill="var(--gold-580)"></circle>
+
+          <text class="tag g531" x="300" y="266">531 nm — Fano / GMR</text>
+          <text class="tag g580" x="524" y="40">580 nm — LSPR</text>
+
+          <text class="axis-label" x="60" y="262">480</text>
+          <text class="axis-label" x="820" y="262">650 nm</text>
+          <text class="axis-label" x="10" y="45" transform="rotate(-90 10 45)">T (a.u.)</text>
+        </svg>
+        <p class="chart-caption">Illustrative dual-resonance curve of the waveguide-coupled metallic photonic crystal (WGMPC) — a Fano-type grating-mode resonance at 531 nm coupled with a localized surface-plasmon mode at 580 nm, read out with a 529.4 nm LED.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="stats reveal">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="val">0.8051 <span class="mono" style="font-size:0.6em;color:var(--steel)">RIU⁻¹</span></div>
+        <div class="lbl">Normalized sensitivity</div>
+      </div>
+      <div class="stat">
+        <div class="val gold">1.18×10⁻⁴</div>
+        <div class="lbl">Refractive-index resolution (RIU)</div>
+      </div>
+      <div class="stat">
+        <div class="val">8.05× / 6.36×</div>
+        <div class="lbl">Sensitivity / resolution gain vs. bare waveguide</div>
+      </div>
+      <div class="stat">
+        <div class="val gold">R² 0.996</div>
+        <div class="lbl">Calibration fit, RI 1.333–1.373</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="block" id="about">
+    <div class="section-kicker"><span class="idx mono">ABOUT</span></div>
+    <div class="about-grid reveal">
+      <div class="headshot-frame">
+        <span class="corner tl"></span><span class="corner br"></span>
+        <img src="images/headshot.jpg" alt="Portrait of Abimanyu Jaya Prakash">
+      </div>
+      <div class="about-copy">
+        <p>I'm a graduate researcher at National Chung Cheng University, Taiwan, finishing an M.S. in Mechanical Engineering with a focus on optical photonics. My work takes a device from a COMSOL model, through nanoimprint lithography and thin-film deposition, to a working biosensor validated against refractive-index standards — then into a peer-reviewed paper.</p>
+        <p>Before graduate school, I spent six months as a Customer Support Engineer at Tecsila Healthcare, installing and servicing X-ray, C-arm, and mammography systems in the field. It's where I picked up the habit of treating a design as unfinished until it survives contact with real equipment, real technicians, and real constraints — an instinct that carries straight into cleanroom fabrication.</p>
+        <div class="location-line">
+          <span><span class="pip"></span>Based in Taiwan</span>
+          <span>Open to R&D / mechanical engineering roles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED WORK ================= -->
+  <section class="block" id="work">
+    <div class="section-kicker"><span class="idx mono">01 · FEATURED WORK</span></div>
+    <div class="work-card reveal">
+      <div class="work-head">
+        <p class="eyebrow" style="margin-bottom:10px;">M.S. THESIS</p>
+        <h3>Metallic Photonic Crystal Waveguide Biosensor for Highly Sensitive, Low-Cost and Rapid Biosensing</h3>
+        <p class="lede">A gold-nanorod grating on a TiO₂ waveguide that hybridizes a guided-mode resonance with a localized surface-plasmon mode. The dual resonance makes the device far more sensitive to refractive-index change than a bare waveguide sensor of the same footprint — while staying compatible with a simple LED-based readout instead of a benchtop spectrometer.</p>
+      </div>
+
+      <div class="device-fig">
+        <svg id="device-diagram" viewBox="0 0 900 260" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Cross-section schematic of the biosensor: gold nanorod grating on a titanium dioxide waveguide on a glass substrate, with a microfluidic channel above">
+          <!-- glass substrate -->
+          <rect x="120" y="170" width="660" height="46" fill="#161d26" stroke="#232b34"/>
+          <!-- TiO2 waveguide -->
+          <rect x="120" y="150" width="660" height="20" fill="#1c2530" stroke="#232b34"/>
+          <!-- Au nanorods -->
+          <g>
+            <rect x="150" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="210" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="270" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="330" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="390" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="450" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="510" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="570" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="630" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+            <rect x="690" y="126" width="26" height="24" class="accent-y" opacity="0.9"/>
+          </g>
+          <!-- microfluidic channel -->
+          <rect x="120" y="70" width="660" height="50" fill="none" stroke="#2a3440" stroke-dasharray="4 4"/>
+          <text x="130" y="95" fill="#56626d">microfluidic sensing channel</text>
+
+          <!-- incident light -->
+          <line x1="450" y1="20" x2="450" y2="120" stroke="#6dff3c" stroke-width="1.5" marker-end="url(#arrow)"/>
+          <text x="462" y="40" class="accent-g" style="fill:#6dff3c">529.4 nm LED</text>
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 z" fill="#6dff3c"/>
+            </marker>
+          </defs>
+
+          <!-- callouts -->
+          <line class="callout-line" x1="163" y1="150" x2="163" y2="235"/>
+          <text x="130" y="250" class="label-strong">Au nanorods ⌀402.9 nm · h 100.8 nm</text>
+
+          <line class="callout-line" x1="450" y1="170" x2="450" y2="235"/>
+          <text x="380" y="250" class="label-strong">TiO₂ waveguide, ~100 nm</text>
+
+          <text x="700" y="200" class="label-strong">Glass substrate</text>
+
+          <text x="620" y="120" style="fill:#56626d">grating period Λ 600.37 nm</text>
+        </svg>
+      </div>
+
+      <div class="spec-grid">
+        <div class="spec-item"><div class="k">Grating period</div><div class="v">600.37 nm</div></div>
+        <div class="spec-item"><div class="k">Au nanorod diameter</div><div class="v">402.9 nm</div></div>
+        <div class="spec-item"><div class="k">Au height</div><div class="v">100.8 nm</div></div>
+        <div class="spec-item"><div class="k">TiO₂ waveguide</div><div class="v">~100 nm</div></div>
+        <div class="spec-item"><div class="k">Resonances</div><div class="v">531 nm + 580 nm</div></div>
+        <div class="spec-item"><div class="k">Readout</div><div class="v">529.4 nm LED, intensity-modulated</div></div>
+      </div>
+
+      <div class="process-flow">
+        <div class="process-step"><div class="num">01</div><div class="title">Nanoimprint lithography</div><div class="desc">Pattern the grating into the TiO₂ waveguide layer.</div></div>
+        <div class="process-step"><div class="num">02</div><div class="title">Thermal Au evaporation</div><div class="desc">Deposit gold over the imprinted pattern.</div></div>
+        <div class="process-step"><div class="num">03</div><div class="title">Lift-off</div><div class="desc">Resolve the gold nanorod array.</div></div>
+        <div class="process-step"><div class="num">04</div><div class="title">Microfluidic integration</div><div class="desc">Bond a sensing channel over the array.</div></div>
+        <div class="process-step"><div class="num">05</div><div class="title">SEM / AFM verification</div><div class="desc">Confirm geometry against design targets.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PUBLICATION ================= -->
+  <section class="block tight" id="publication">
+    <div class="section-kicker"><span class="idx mono">02 · PUBLICATION</span></div>
+    <div class="pub-card reveal">
+      <div>
+        <div class="pub-meta">Physica Scripta · 2026</div>
+        <h4>Peer-reviewed article on the waveguide-coupled metallic photonic crystal biosensor</h4>
+        <p class="authors">Barshilia, D., <span class="me">Jaya Prakash, A.</span>, Hsieh, W.-H., &amp; Chang, G.-E.</p>
+        <p class="doi">DOI: <a href="https://doi.org/10.1088/1402-4896/ae8207" target="_blank" rel="noopener">10.1088/1402-4896/ae8207</a></p>
+      </div>
+      <a class="btn ghost" href="https://doi.org/10.1088/1402-4896/ae8207" target="_blank" rel="noopener">Read paper ↗</a>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="block" id="experience">
+    <div class="section-kicker"><span class="idx mono">03 · EXPERIENCE</span></div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="when">Feb 2025 — Present</div>
+        <div>
+          <h4>Graduate Researcher</h4>
+          <div class="org">National Chung Cheng University · Taiwan</div>
+          <ul>
+            <li>Research optical biosensors and photonic nanostructures for refractive-index sensing</li>
+            <li>Run optical simulations in COMSOL Multiphysics to analyze and iterate on device performance</li>
+            <li>Design, fabricate, and evaluate photonic structures for sensing applications</li>
+            <li>Prepare research documentation, technical presentations, and literature reviews</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="when">Feb 2024 — Aug 2024</div>
+        <div>
+          <h4>Customer Support Engineer</h4>
+          <div class="org">Tecsila Healthcare · India</div>
+          <ul>
+            <li>Installed and commissioned X-ray, C-arm, and mammography systems at customer sites</li>
+            <li>Performed preventive maintenance and diagnosed/resolved technical issues in the field</li>
+            <li>Supported refurbishment of medical imaging equipment and maintained service records</li>
+            <li>Ensured compliance with equipment safety and operational standards</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="when">Sep 2023 — Feb 2024</div>
+        <div>
+          <h4>Research Intern</h4>
+          <div class="org">CCU Research Lab · Taiwan</div>
+          <ul>
+            <li>Conducted experiments in nanoparticle synthesis and biomineralization</li>
+            <li>Performed laboratory testing, data collection, and analysis; supported experimental design</li>
+            <li>Documented procedures and findings; contributed to technical reports</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="block" id="skills">
+    <div class="section-kicker"><span class="idx mono">04 · SKILLS</span></div>
+    <div class="skills-grid reveal">
+      <div class="skill-group">
+        <div class="g-title">Simulation &amp; design</div>
+        <div class="tag-row">
+          <span class="tag">COMSOL Multiphysics</span>
+          <span class="tag">Optical / photonic device simulation</span>
+          <span class="tag">IC design fundamentals</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="g-title">Nanofabrication</div>
+        <div class="tag-row">
+          <span class="tag">Nanoimprint lithography (NIL)</span>
+          <span class="tag">Reactive ion etching (RIE)</span>
+          <span class="tag">Thin-film deposition</span>
+          <span class="tag">SEM / AFM characterization</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="g-title">Semiconductor &amp; process</div>
+        <div class="tag-row">
+          <span class="tag">Semiconductor manufacturing &amp; scaling</span>
+          <span class="tag">Process integration engineering</span>
+          <span class="tag">Integrated interconnect &amp; packaging (IIP)</span>
+          <span class="tag">Design &amp; technology platform (DTP)</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="g-title">Field &amp; operations</div>
+        <div class="tag-row">
+          <span class="tag">Equipment installation &amp; maintenance</span>
+          <span class="tag">Technical troubleshooting</span>
+          <span class="tag">Compliance &amp; documentation</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="g-title">Analysis &amp; collaboration</div>
+        <div class="tag-row">
+          <span class="tag">Data analysis</span>
+          <span class="tag">Technical writing</span>
+          <span class="tag">Project management</span>
+          <span class="tag">Cross-cultural collaboration</span>
+        </div>
+      </div>
+      <div class="skill-group full">
+        <div class="g-title">Languages</div>
+        <div class="tag-row">
+          <span class="tag">English — Professional</span>
+          <span class="tag">Telugu — Fluent</span>
+          <span class="tag">Tamil — Native</span>
+          <span class="tag">Traditional Chinese — Beginner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section class="block" id="education">
+    <div class="section-kicker"><span class="idx mono">05 · EDUCATION</span></div>
+    <div class="reveal">
+      <div class="edu-item">
+        <div class="edu-row">
+          <h4>M.S. Mechanical Engineering</h4>
+          <div class="when">Feb 2025 — Jan 2027 (expected)</div>
+        </div>
+        <div class="org">National Chung Cheng University, Taiwan</div>
+        <div class="note">Optical biosensors research · photonic nanostructures · refractive-index sensing</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-row">
+          <h4>B.Tech. Biomedical Engineering</h4>
+          <div class="when">2020 — Aug 2024</div>
+        </div>
+        <div class="org">Vel Tech Institute</div>
+      </div>
+
+      <div class="recog-grid">
+        <div class="recog-item"><strong>Outstanding Performance Award</strong>National Chung Cheng University — two consecutive academic years</div>
+        <div class="recog-item"><strong>Semiconductor Manufacturing &amp; Scaling</strong>Certification, LinkedIn Learning</div>
+        <div class="recog-item"><strong>Asia-Pacific Conference 2025</strong>Participant</div>
+        <div class="recog-item"><strong>Taiwan Experience Education Program (TEEP)</strong>Taiwan</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= CONTACT ================= -->
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let's talk about what your team is building.</h2>
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="mailto:abimanyujayaprakash@gmail.com">
+        <div class="k">Email</div>
+        <div class="v">abimanyujayaprakash@gmail.com</div>
+      </a>
+      <a class="contact-card" href="tel:+886928997734">
+        <div class="k">Phone</div>
+        <div class="v">+886 928 997 734</div>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/abi5873766" target="_blank" rel="noopener">
+        <div class="k">LinkedIn</div>
+        <div class="v">linkedin.com/in/abi5873766</div>
+      </a>
+      <a class="contact-card" href="https://www.cake.me/me/abimanyu-jaya-prakash" target="_blank" rel="noopener">
+        <div class="k">Cake.me</div>
+        <div class="v">cake.me/me/abimanyu-jaya-prakash</div>
+      </a>
+    </div>
+    <div class="foot-meta">
+      <span>Abimanyu Jaya Prakash — Taiwan</span>
+      <span id="year-mono"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
